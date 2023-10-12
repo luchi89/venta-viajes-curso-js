@@ -32,7 +32,7 @@ function obtenerContenido(enlace) {
     let contenido = {
         'Barcelona': barcelona,
         'Roma': roma,
-        'Paris': paris,
+        'París': paris,
         'Londres': londres
 
     };

@@ -2,37 +2,66 @@ body {
     margin: 0;
 }
 
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    width: 25%;
-    background-color: #f1f1f1;
-    position: fixed;
-    height: 100%;
-    overflow: auto;
-}
-
-li a {
-    display: block;
-    color: #000;
-    padding: 8px 16px;
-    text-decoration: none;
-}
-
-li a.active {
-    background-color: #04AA6D;
-    color: white;
-}
-
-li a:hover:not(.active) {
-    background-color: #555;
-    color: white;
-}
-
-
 .contenedor {
-    margin-left: 25%;
+    margin-left: 17%;
     padding: 1px 16px;
     height: 1000px;
 }
+
+/* button:focus-visible, */
+
+nav {
+    border-radius: 2rem;
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    position: fixed;
+    right: 100%;
+    padding: 10px;
+    background-color: black;
+    transform: translateX(1em);
+    transition: 1s transform;
+}
+
+nav:hover,
+nav:focus-within {
+    transform: translateX(100%);
+}
+
+.neon {
+margin: 0;
+font-size: 30px;
+text-shadow: 0 0 5px green,0 0 15px yellow,0 0 30px green,0 0 50px green;
+}
+
+.btn-neon {   
+    border-radius: 1.5rem;
+    position: relative;
+    display: inline-block;
+    padding: 10px 30px;
+    color: green;
+    letter-spacing: 4px;
+    font-size: 24px;
+    text-decoration: none;
+    overflow: hidden;
+    transition: 0.2s;
+    box-sizing: border-box;
+    border: 0.085em solid;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.btn-neon:hover{
+    background: green;
+    box-shadow: 0 0 10px green, 0 0 40px green, 0 0 80px green;
+    transition-delay: 0.2s;
+    color: white;
+}
+
+a.active {
+    background: rgb(80, 168, 80);
+    box-shadow: 0 0 10px green, 0 0 40px green, 0 0 80px green;
+    transition-delay: 0.2s;
+    color: white;
+}
+
